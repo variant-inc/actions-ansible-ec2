@@ -4,7 +4,7 @@
     name: "{{ item.bucket_name }}"
     state: present
     delete_public_access: yes
-    encryption: aws:kms
+    encryption: AES256
     region: "{{ placement.region }}"
     tags:
       owner: data-science
